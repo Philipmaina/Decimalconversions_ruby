@@ -66,7 +66,7 @@ $entry_no = gets.chomp.to_i
 
 
 case(choice)
-    when 1 then puts("The decimal equivalent of the decimal number inputed is #{Numeral_Conversion(2)}")
+    when 1 then puts("The binary equivalent of the decimal number inputed is #{Numeral_Conversion(2)}")
     when 2 then puts("The octal equivalent of the decimal number inputed is #{Numeral_Conversion(8)}")
     when 3 then puts("The hexadecimal equivalent of the decimal number inputed is #{Numeral_Conversion(16)}")
 end
