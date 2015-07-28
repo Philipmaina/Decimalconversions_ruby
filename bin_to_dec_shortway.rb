@@ -18,7 +18,7 @@
 
 #METHOD(FUNCTION) STARTS HERE
 
-def Othersystem_to_decimal(base)
+def Othersystems_to_decimal(base)
 
 	i = 0
     finalans = 0
@@ -52,6 +52,24 @@ def Othersystem_to_decimal(base)
 
 end
 
+#THE ACTUAL PROGRAM STARTS HERE
+system"clear"
+
+puts("What operation/conversion would you like to perform ?")
+puts("1. Binary to Decimal conversion")
+puts("2. Octal to Decimal conversion")
+puts("3. Hexadecimal to Decimal conversion")
+
+choice = gets.chomp.to_i
+
+puts("What number would you like the conversion to be applied on ?")
+$entryvaluestring = gets.chomp
+
+case (choice)
+  when 1 then puts("The decimal equivalent of the binary value keyed in is #{ Othersystems_to_decimal(2) }")
+  when 2 then puts("The decimal equivalent of the octal number keyed in is #{ Othersystems_to_decimal(8) }")
+  when 3 then puts("The decimal equivalent of the hexadecimal number keyed in is #{ Othersystems_to_decimal(16) }")	
+end
 
 
 
